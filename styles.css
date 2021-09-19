@@ -2,19 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     color: #000;
     font-family: 'Barlow', sans-serif;
-}
-picture{
-    position: absolute;
-    z-index: -1;
+    overflow-x: hidden;
 }
 .background__img{
+    position: absolute;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    margin-top: -122.5px;
 }
 .intro{
     height: 100vh;
@@ -50,7 +49,7 @@ picture{
 }
 .nav_link:hover{
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 /* Introducation */
@@ -65,14 +64,8 @@ picture{
     font-size: 48px;
     word-spacing: 1rem;
     letter-spacing: 1.5rem;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
-/* main{
-    position: relative;
-    top: 510px;
-    margin: 0;
-    padding: 0;
-} */
 .container{
     display: flex;
     justify-content: space-evenly;
@@ -101,22 +94,26 @@ picture{
     width: 50%;
     height: auto;
 }
-.cont__img{
-    /* position: relative;
-    right: -39.5px; */
+.cont__img{ 
+    position: relative;
     width: 100%;
     height: 100%;
 }
-
 .cont-2{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+}
+.cont__img-2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
 }
 .cont-2_content{
     width: 60%;
+    text-align: center;
     margin: 300px auto 0;
 }
 .cont-2 h1{
@@ -130,12 +127,11 @@ picture{
 
 /* Testimonials */
 .testimonials{
-    /* background-color: #eee; */
     font-family: 'Fraunces', serif;
     width: 100vw;
     height: 80vh;
     text-align: center;
-    padding-top: 100px;
+    margin-top: 200px;
 }
 .testimonials h1{
     letter-spacing: 5px;
@@ -168,4 +164,55 @@ picture{
 .cards h6{
     color: hsl(232, 10%, 55%);
     font-size: 14px;
+}
+
+/* Gallery */
+.section--3{
+    width: 100vw;
+    margin-bottom: -10px;
+}
+.wraper{
+    display: flex;
+    flex-direction: row;
+}
+.wrap{
+    position: relative;
+    width: 25%;
+}
+.wraper img{
+    width: 100%;
+}
+
+/* Footer */
+footer{
+    background-color: hsl(169, 39%, 55%);
+    width: 100%;
+    height: 300px;
+}
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(167, 40%, 24%);
+}
+.footer_content h1{
+    margin-top: 50px;
+    font-size: 48px;
+}
+.footer_content ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.footer_content ul li{
+    padding: 50px;
+    font-size: 20px;
+}
+.footer_content ul li a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+}
+.footer_content ul li a:hover{
+    color: #fff;
 }

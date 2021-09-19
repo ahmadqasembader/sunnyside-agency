@@ -51,16 +51,16 @@
         <img src="/images/logo.svg" alt="" class="logo" />
         <ul class="nav__items">
           <li class="nav__item">
-            <a href="" class="nav_link">About</a>
+            <a href="#section--1" class="nav_link">About</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav_link">Services</a>
+            <a href="#section--2" class="nav_link">Services</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav_link">Projects</a>
+            <a href="#section--3" class="nav_link">Projects</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav_link">Contact</a>
+            <a href="#section--4" class="nav_link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -83,7 +83,7 @@
     </div>
 
     <main>
-      <div class="container">
+      <section id="section--1" class="container">
         <div class="cont--1">
           <h1>Transform your brand</h1>
           <p>
@@ -112,7 +112,7 @@
             />
           </picture>
         </div>
-      </div>
+      </section>
       <div class="container">
         <div class="cont--2">
           <!-- <img src="/images/desktop/image-transform.jpg" alt=""> -->
@@ -157,7 +157,7 @@
             <img
               src="/images/desktop/image-graphic-design.jpg"
               alt=""
-              class="cont__img"
+              class="cont__img-2"
             />
           </picture>
           <div class="cont-2_content">
@@ -182,10 +182,10 @@
             <img
               src="/images/desktop/image-photography.jpg"
               alt=""
-              class="cont__img"
+              class="cont__img-2"
             />
           </picture>
-          <div  class="cont-2_content">
+          <div class="cont-2_content">
             <h1>Photography</h1>
             <p>
               Increase your credibility by getting the most stunning, 
@@ -196,7 +196,7 @@
         </div>
       </div>
 
-      <div class="testimonials">
+      <section id="section--2" class="testimonials">
         <h1>
           Client testimonials
         </h1>
@@ -241,10 +241,95 @@
             </h6>
           </div>
         </div>
-      </div>
+      </section>
 
+      <section class="section--3">
+        <div class="wraper">
+          <div class="wrap-1">
+            <picture class="img">
+              <source
+                media="(min-width: 400px)"
+                srcset="./images/desktop/image-gallery-cone.jpg"
+              />
+              <source
+                media="(max-width: 400px)"
+                srcset="./images/mobile/image-gallery-cone.jpg"
+              />
+              <img
+                src="/images/desktop/image-gallery-cone.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+          <div class="wrap-2">
+            <picture class="img">
+              <source
+                media="(min-width: 400px)"
+                srcset="./images/desktop/image-gallery-milkbottles.jpg"
+              />
+              <source
+                media="(max-width: 400px)"
+                srcset="./images/mobile/image-gallery-milkbottles.jpg"
+              />
+              <img
+                src="/images/desktop/image-gallery-milkbottles.jpg"
+                alt=""
+              />
+            </picture>
+  
+          </div>
+          <div class="wrap-3">
+            <picture class="img">
+              <source
+                media="(min-width: 400px)"
+                srcset="./images/desktop/image-gallery-orange.jpg"
+              />
+              <source
+                media="(max-width: 400px)"
+                srcset="./images/mobile/image-gallery-orange.jpg"
+              />
+              <img
+                  src="/images/desktop/image-gallery-orange.jpg"
+                alt=""
+              />
+            </picture class="img">
+  
+          </div>
+          <div class="wrap-4">
+            <picture>
+              <source
+                media="(min-width: 400px)"
+                srcset="./images/desktop/image-gallery-sugarcubes.jpg"
+              />
+              <source
+                media="(max-width: 400px)"
+                srcset="./images/mobile/image-gallery-sugarcubes.jpg"
+              />
+              <img
+                src="/images/desktop/image-gallery-sugarcubes.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
 
-       
+      <footer id="section--4">
+        <div class="footer_content">
+          <h1>Sunnyside</h1>
+          <ul>
+            <li>
+              <a href="#section--2" id="">About</a>
+            </li>
+            <li>
+              <a href="#section--1" id="">Services</a>
+            </li>
+            <li>
+              <a href="#section--3" id="">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
 
     <!-- <div class="attribution">
